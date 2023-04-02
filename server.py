@@ -1,5 +1,5 @@
 import sys
-sys.path.append("<your_custom_path>/Sentiment-Analysis-of-Restaurant-Reviews")
+sys.path.append("<your_custom_path>/Python-API-for-Sentiment-Analysis-of-Restaurant-reviews-using-BERT")
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
