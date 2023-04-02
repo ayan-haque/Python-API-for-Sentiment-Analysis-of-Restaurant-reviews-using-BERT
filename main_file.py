@@ -1,5 +1,5 @@
 import sys
-sys.path.append("<your_custom_path>/Sentiment-Analysis-of-Restaurant-Reviews")
+sys.path.append("<your_custom_path>/Python-API-for-Sentiment-Analysis-of-Restaurant-reviews-using-BERT")
 
 import numpy as np
 from numpy import array, amax, amin, sum
@@ -14,12 +14,12 @@ Embedding_obj = Embedding()
 
 
 # load the model from disk
-filename = '<your_custom_path>/Sentiment-Analysis-of-Restaurant-Reviews/ML_model_trained_weights/naive_bayes_model.sav' # (Acc. 91.5 % but Less responce time ~220ms)
+filename = '<your_custom_path>/Python-API-for-Sentiment-Analysis-of-Restaurant-reviews-using-BERT/ML_model_trained_weights/naive_bayes_model.sav' # (Acc. 91.5 % but Less responce time ~220ms)
 loaded_model = pickle.load(open(filename, 'rb'))
 
 # Loading the list containing 1000x768 BERT embeddings 
-filename_2 = '<your_custom_path>/Sentiment-Analysis-of-Restaurant-Reviews/Train_data_BERT_Embeddings/RR_Positive_Train_data_Bert_embeddings.sav'   
-filename_3 = '<your_custom_path>/Sentiment-Analysis-of-Restaurant-Reviews/Train_data_BERT_Embeddings/RR_Negative_Train_data_Bert_embeddings.sav'   
+filename_2 = '<your_custom_path>/Python-API-for-Sentiment-Analysis-of-Restaurant-reviews-using-BERT/Train_data_BERT_Embeddings/RR_Positive_Train_data_Bert_embeddings.sav'   
+filename_3 = '<your_custom_path>/Python-API-for-Sentiment-Analysis-of-Restaurant-reviews-using-BERT/Train_data_BERT_Embeddings/RR_Negative_Train_data_Bert_embeddings.sav'   
 
 RR_Positive_dataset_emd = pickle.load(open(filename_2, 'rb'))  
 RR_Negative_dataset_emd = pickle.load(open(filename_3, 'rb'))  
