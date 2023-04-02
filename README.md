@@ -1,4 +1,4 @@
-# Sentiment-Analysis-of-Restaurant-Reviews
+# Python-API-for-Sentiment-Analysis-of-Restaurant-reviews-using-BERT
 <a id="top"></a>
 ## Table of contents
 * <a href="#motivation">Motivation</a>
@@ -75,25 +75,25 @@ To run this project, you first need to clone this repository in your local syste
 #### Step 3
 * Export **PYTHONPATH** to the cloned directory address:
   ```
-  (proj_env)$ export PYTHONPATH="<your_custom_path>/Sentiment-Analysis-of-Restaurant-Reviews"
+  (proj_env)$ export PYTHONPATH="<your_custom_path>/Python-API-for-Sentiment-Analysis-of-Restaurant-reviews-using-BERT"
   ```
-  (Here, <your_custom_path> is the address where the Sentiment-Analysis-of-Restaurant-Reviews repository has been cloned)
+  (Here, <your_custom_path> is the address where the Python-API-for-Sentiment-Analysis-of-Restaurant-reviews-using-BERT repository has been cloned)
   
 * You need to change the PATH in two _.py_ files namely : _main_file.py_ &  _server.py_ . I will update the _config.ini file_ for changing PATH without any difficulty in the next update.  
   ```
   In main_file.py:
-    (line 2) : sys.path.append(<your_custom_path>/Sentiment-Analysis-of-Restaurant-Reviews)
-    (line 17): filename   = <your_custom_path>/Sentiment-Analysis-of-Restaurant-Reviews/Train_data_BERT_Embeddings/RR_Positive_Train_data_Bert_embeddings.sav
-    (line 21): filename_2 = <your_custom_path>/Sentiment-Analysis-of-Restaurant-Reviews/Train_data_BERT_Embeddings/RR_Positive_Train_data_Bert_embeddings.sav
-    (line 22): filename_3 = <your_custom_path>/Sentiment-Analysis-of-Restaurant-Reviews/Train_data_BERT_Embeddings/RR_Negative_Train_data_Bert_embeddings.sav
+    (line 2) : sys.path.append(<your_custom_path>/Python-API-for-Sentiment-Analysis-of-Restaurant-reviews-using-BERT)
+    (line 17): filename   = <your_custom_path>/Python-API-for-Sentiment-Analysis-of-Restaurant-reviews-using-BERT/Train_data_BERT_Embeddings/RR_Positive_Train_data_Bert_embeddings.sav
+    (line 21): filename_2 = <your_custom_path>/Python-API-for-Sentiment-Analysis-of-Restaurant-reviews-using-BERT/Train_data_BERT_Embeddings/RR_Positive_Train_data_Bert_embeddings.sav
+    (line 22): filename_3 = <your_custom_path>/Python-API-for-Sentiment-Analysis-of-Restaurant-reviews-using-BERT/Train_data_BERT_Embeddings/RR_Negative_Train_data_Bert_embeddings.sav
     
   In server.py:
-    (line 2) : sys.path.append(<your_custom_path>/Sentiment-Analysis-of-Restaurant-Reviews)
+    (line 2) : sys.path.append(<your_custom_path>/Python-API-for-Sentiment-Analysis-of-Restaurant-reviews-using-BERT)
   ```
 <br>
 
 #### Step 4
-* Go inside: <your_custom_path/Sentiment-Analysis-of-Restaurant-Reviews> directory through terminal and write the below mentioned command to start the project:
+* Go inside: <your_custom_path/Python-API-for-Sentiment-Analysis-of-Restaurant-reviews-using-BERT> directory through terminal and write the below mentioned command to start the project:
   ```
   (proj_env)$ python server.py
   ```
