@@ -65,7 +65,6 @@ class  Restaurant_Reviews:
 			sentence = processed_data[key]
 			print('sentence is :', sentence)
 		df = Embedding_obj.get_embeddings(sentence)
-		
 		return self.predict(df)
 	
 	
